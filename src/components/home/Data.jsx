@@ -9,8 +9,8 @@ const Data = () => {
 
       <h3 className="home__job-description">Front-End developer</h3>
       <p className="home__summary">
-        I'm front-end web developer with a knack for research and weight lifting
-        💪.
+        I'm a front-end web developer with a knack for research and weight
+        lifting 💪.
       </p>
 
       <a href="" className="button button--flex">
