@@ -35,6 +35,10 @@
   transition: 0.3s;
 }
 
+* {
+  transition: 0.3s;
+}
+
 .nav__icon,
 .nav__toggle,
 .nav__close {
