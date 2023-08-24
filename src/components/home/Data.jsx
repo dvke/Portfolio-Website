@@ -13,7 +13,7 @@ const Data = () => {
         lifting 💪.
       </p>
 
-      <a href="" className="button button--flex">
+      <a href="#contact" className="button button--flex">
         Say Hello
         <svg
           className="button__icon"
