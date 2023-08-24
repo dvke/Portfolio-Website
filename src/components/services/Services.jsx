@@ -1,6 +1,16 @@
+import { useState } from "react";
 import "./Services.css";
 
 const Services = () => {
+  const [toggleState, setToggleState] = useState(0);
+
+  const toggleTab = (index) => {
+    setToggleState(index);
+  };
+
+  const closeModal = () => {
+    setToggleState(0);
+  };
   return (
     <section className="services section" id="services">
       <h2 className="section__title">Services</h2>
@@ -15,14 +25,23 @@ const Services = () => {
             </h3>
           </div>
 
-          <span className="services__button">
+          <span className="services__button" onClick={() => toggleTab(1)}>
             View more
             <i className="uil uil-arrow-right services__button-icon"></i>
           </span>
 
-          <div className="services__modal">
+          <div
+            className={
+              toggleState === 1
+                ? "services__modal active-modal"
+                : "services__modal"
+            }
+          >
             <div className="services__modal-content">
-              <i className="uil uil-times services__modal-close"></i>
+              <i
+                className="uil uil-times services__modal-close"
+                onClick={closeModal}
+              ></i>
 
               <h3 className="services__modal-title">Product Designer</h3>
               <p className="services__modal-description">
@@ -76,14 +95,23 @@ const Services = () => {
             </h3>
           </div>
 
-          <span className="services__button">
+          <span className="services__button" onClick={() => toggleTab(2)}>
             View more
             <i className="uil uil-arrow-right services__button-icon"></i>
           </span>
 
-          <div className="services__modal">
+          <div
+            className={
+              toggleState === 2
+                ? "services__modal active-modal"
+                : "services__modal"
+            }
+          >
             <div className="services__modal-content">
-              <i className="uil uil-times services__modal-close"></i>
+              <i
+                className="uil uil-times services__modal-close"
+                onClick={closeModal}
+              ></i>
 
               <h3 className="services__modal-title">Ui/Ux Designer</h3>
               <p className="services__modal-description">
@@ -137,14 +165,23 @@ const Services = () => {
             </h3>
           </div>
 
-          <span className="services__button">
+          <span className="services__button" onClick={() => toggleTab(3)}>
             View more
             <i className="uil uil-arrow-right services__button-icon"></i>
           </span>
 
-          <div className="services__modal">
+          <div
+            className={
+              toggleState === 3
+                ? "services__modal active-modal"
+                : "services__modal"
+            }
+          >
             <div className="services__modal-content">
-              <i className="uil uil-times services__modal-close"></i>
+              <i
+                className="uil uil-times services__modal-close"
+                onClick={closeModal}
+              ></i>
 
               <h3 className="services__modal-title"> Visual Designer</h3>
               <p className="services__modal-description">
