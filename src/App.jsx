@@ -4,6 +4,7 @@ import About from "./components/about/About";
 import Skills from "./components/skills/Skills";
 import Services from "./components/services/Services";
 import Qualification from "./components/qualification/Qualification";
+import Projects from "./components/projects/Projects";
 import Testimonials from "./components/testimonials/Testimonials";
 import Contact from "./components/contact/Contact";
 import "./App.css";
@@ -18,6 +19,7 @@ function App() {
         <Skills />
         <Services />
         <Qualification />
+        <Projects />
         <Testimonials />
         <Contact />
       </main>
