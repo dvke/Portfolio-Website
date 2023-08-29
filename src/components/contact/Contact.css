@@ -87,6 +87,10 @@
   z-index: 1;
 }
 
+.contact__form-input:focus {
+  border: 2px solid var(--title-color-dark);
+}
+
 .contact__form-tag {
   position: absolute;
   top: -0.75rem;

@@ -38,8 +38,8 @@
   width: 30px;
 }
 
-.home__hand:hover {
-  animation: wave 1s linear forwards;
+.home__name:hover .home__hand {
+  animation: wave 1s infinite;
   transform-origin: 50% 100%;
 }
 
