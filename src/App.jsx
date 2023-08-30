@@ -8,6 +8,7 @@ import Projects from "./components/projects/Projects";
 import Testimonials from "./components/testimonials/Testimonials";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
+import ScrollUp from "./components/scrollup/ScrollUp";
 import "./App.css";
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Testimonials />
         <Contact />
         <Footer />
+        <ScrollUp />
       </main>
     </>
   );
