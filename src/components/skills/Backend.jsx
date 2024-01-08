@@ -1,8 +1,15 @@
+import useIntersect from "../../hooks/useIntersect";
+
 const Backend = () => {
+  const { ref, isIntersecting } = useIntersect("-100px");
+
   return (
     <div className="skills__content">
-      <h3 className="skills__title">Backend developer</h3>
-      <div className="skills__box">
+      <h3 className="skills__title">Backend skills</h3>
+      <div
+        className={isIntersecting ? "skills__box bounce" : "skills__box"}
+        ref={ref}
+      >
         <div className="skills__group">
           <div className="skills__data">
             <i

@@ -8,7 +8,7 @@
   /*Color mode HSL(hue, saturation, lightness)*/
   --hue: 0;
   --sat: 0%;
-  --title-color: hsl(var(--hue), var(--sat), 25%);
+  --title-color: hsl(var(--hue), var(--sat), 20%);
   --title-color-dark: hsl(var(--hue), var(--sat), 0%);
   --text-color: hsl(var(--hue), var(--sat), 46%);
   --body-color: hsl(var(--hue), var(--sat), 98%);
@@ -60,6 +60,27 @@
     --small-font-size: 0.813rem;
     --smaller-font-size: 0.75rem;
   }
+}
+
+/* ==============scrollbar================ */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: grey;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--title-color-dark);
 }
 
 /*=============== BASE ===============*/
