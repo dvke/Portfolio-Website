@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { projectsData, projectsNav } from "./Data";
+import Modal from "../modal/Modal";
 import ProjectItems from "./ProjectItems";
 
 const RecentProjects = () => {
@@ -18,14 +19,14 @@ const RecentProjects = () => {
     }
   }, [item]);
 
-  const handleClick = (e, index) => {
-    setItem({ name: e.target.textContent });
-    setActive(index);
-  };
+  // const handleClick = (e, index) => {
+  //   setItem({ name: e.target.textContent });
+  //   setActive(index);
+  // };
 
   return (
     <>
-      <div className="project__filters">
+      {/* <div className="project__filters">
         {projectsNav.map((item, index) => {
           return (
             <span
@@ -43,7 +44,7 @@ const RecentProjects = () => {
             </span>
           );
         })}
-      </div>
+      </div> */}
       <div className="project__container container grid">
         {projects.map((item) => {
           return <ProjectItems item={item} key={item.id} />;

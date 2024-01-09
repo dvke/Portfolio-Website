@@ -1,13 +1,18 @@
-/* eslint-disable react/prop-types */
+import { useModal } from "../../context/ModalContext";
+
 const ProjectItems = ({ item }) => {
+  const { showModal } = useModal();
+  const handleShowModal = () => {
+    console.log(item);
+    showModal(item);
+  };
   return (
-    <div className="project__card" key={item.id}>
-      <img src={item.image} alt="" className="project__img" />
-      <h3 className="project__title">{item.title}</h3>
-      <a href="#" className="project__button">
-        Demo <i className="bx bx-right-arrow-alt project__button-icon"></i>
-      </a>
-    </div>
+    <>
+      <div onClick={handleShowModal} className="project__card" key={item.id}>
+        <img src={item.image} alt="" className="project__img" />
+        <h3 className="project__title">{item.title}</h3>
+      </div>
+    </>
   );
 };
 

@@ -9,25 +9,28 @@ import Testimonials from "./components/testimonials/Testimonials";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 import ScrollUp from "./components/scrollup/ScrollUp";
+import { ModalProvider } from "../src/context/ModalContext";
 import "./App.css";
+import Modal from "./components/modal/Modal";
 
 function App() {
   return (
-    <>
+    <ModalProvider>
       <Header />
       <main className="main">
         <Home />
         <About />
-        <Skills />
-        <Services />
         <Qualification />
+        <Skills />
+        {/* <Services /> */}
         <Projects />
-        <Testimonials />
+        {/* <Testimonials /> */}
         <Contact />
         <Footer />
         <ScrollUp />
       </main>
-    </>
+      <Modal />
+    </ModalProvider>
   );
 }
 

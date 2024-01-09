@@ -16,9 +16,10 @@ const About = () => {
           <Info />
 
           <p className="about__description">
-            Frontend developer, I create web pages with UI / UX user interface,
-            I have years of experience and many clients are happy with the
-            projects carried out.
+            👋 Hi, I'm Uche Obiekwe, a frontend developer passionate about
+            crafting user-friendly web experiences. Proficient in HTML, CSS, and
+            JavaScript, I transform ideas into sleek, responsive websites. Let's
+            build something great together! 🚀✨
           </p>
           <a download="" href={CV} className="button button--flex">
             Download CV

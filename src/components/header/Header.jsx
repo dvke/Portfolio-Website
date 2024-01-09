@@ -64,7 +64,7 @@ const Header = () => {
                 Skills
               </a>
             </li>
-
+            {/* 
             <li className="nav__item">
               <a
                 href="#services"
@@ -78,7 +78,7 @@ const Header = () => {
                 <i className="uil uil-user nav__icon"></i>
                 Services
               </a>
-            </li>
+            </li> */}
 
             <li className="nav__item">
               <a
