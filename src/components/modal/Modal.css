@@ -49,5 +49,26 @@ img {
 }
 
 .modal-content-stack {
+  display: flex;
+  width: 100px;
   margin-top: auto;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+  .modal-content {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 576px) {
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
 }

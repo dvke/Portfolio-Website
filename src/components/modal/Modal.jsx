@@ -6,6 +6,8 @@ import { useEffect } from "react";
 const Modal = () => {
   const { modalVisible, modalContent, hideModal } = useModal();
 
+  const hello = "<h1>hello</h1>";
+
   const handleOverlayClick = (event) => {
     // Close the modal only if the overlay (not the content) is clicked
     if (event.target.className === "modal-overlay") {
@@ -35,10 +37,10 @@ const Modal = () => {
                   {modalContent.description}
                 </p>
                 <div className="modal-content-stack">
-                  {modalContent.stack.join(" ")}
+                  stack:{modalContent.stack}
                 </div>
                 <a href="#" className="project__button">
-                  Demo{" "}
+                  Demo
                   <i className="bx bx-right-arrow-alt project__button-icon"></i>
                 </a>
               </div>
