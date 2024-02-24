@@ -20,15 +20,19 @@ const Modal = () => {
       {modalVisible && (
         <div className="modal-overlay" onClick={handleOverlayClick}>
           <div className="modal-content-container">
-            <button onClick={hideModal}>
-              <i>
-                <i className="bx bx-window-close modal-close-button"></i>
-              </i>
-            </button>
+            {/* close icon */}
+            <i
+              onClick={hideModal}
+              className="bx bx-window-close modal-close-button"
+            ></i>
             <div className="modal-content">
               {/* image */}
               <div>
-                <img src={modalContent.image} alt="project image" />
+                <img
+                  className="modal-content_image"
+                  src={modalContent.image}
+                  alt="project image"
+                />
               </div>
               {/* content */}
               <div className="con">
@@ -36,13 +40,19 @@ const Modal = () => {
                 <p className="modal-content_description">
                   {modalContent.description}
                 </p>
-                <div className="modal-content-stack">
-                  stack:{modalContent.stack}
-                </div>
-                <a href="#" className="project__button">
-                  Demo
-                  <i className="bx bx-right-arrow-alt project__button-icon"></i>
-                </a>
+                <div className="modal-content-stack">{modalContent.stack}</div>
+                {modalContent.link ? (
+                  <a
+                    target="_blank"
+                    href={modalContent.link}
+                    className="project__button"
+                  >
+                    Demo
+                    <i className="bx bx-right-arrow-alt project__button-icon"></i>
+                  </a>
+                ) : (
+                  <p style={{ color: "red", font: "bold" }}>WORK IN PROGRESS</p>
+                )}
               </div>
             </div>
           </div>

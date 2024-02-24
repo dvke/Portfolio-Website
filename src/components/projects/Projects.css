@@ -40,7 +40,9 @@
 }
 
 .project__img {
-  width: 300px;
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
   margin-bottom: var(--mb-1);
 }
 
@@ -52,7 +54,7 @@
 
 .project__button {
   color: var(--text-color);
-  font-size: var(--small-font-size);
+  font-size: var(--medium-font-size);
   display: flex;
   align-items: center;
   column-gap: 0.25rem;

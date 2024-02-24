@@ -64,7 +64,7 @@ const Contact = () => {
               <h3 className="contact__card-title">Messanger</h3>
               <span className="contact__card-data">user.fb123</span>
 
-              <a href="https://m.me/uobiekwe" className="contact__button">
+              <a href="https://m.me/obiekwe.uche.3" className="contact__button">
                 Write me{" "}
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
