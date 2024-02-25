@@ -25,7 +25,7 @@
 }
 
 .bounce .skills__data .bx {
-  animation: bounce 2s ease infinite;
+  animation: bounce 2s ease-in-out;
 }
 @keyframes bounce {
   0%,
