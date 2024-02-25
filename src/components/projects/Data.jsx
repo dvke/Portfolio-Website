@@ -30,7 +30,7 @@ export const projectsData = [
     title: "Favflix",
     category: "web",
     description:
-      "Favflix lets you watch movie trailers and add your favorite movies to your watchlist. ",
+      "Favflix is integrated with The movie database(TMDB) to get you the latest movie trailers and lets you save your fav movies to a personalized watchlist. Built with React, Tailwind CSS and Firebase",
     stack: [react, css, tailwind, firebase],
     link: "https://fav-flix.netlify.app/",
   },
@@ -49,7 +49,7 @@ export const projectsData = [
     image: app4r3l,
     title: "APP4R3L",
     category: "design",
-    description: "APP4R3L is a fashion e-commerce web application.",
+    description: "APP4R3L is a full-stack fashion e-commerce web application.",
     stack: [react, tailwind, css, strapi],
   },
 ];
