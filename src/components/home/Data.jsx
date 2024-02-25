@@ -4,7 +4,7 @@ const Data = () => {
     <div className="home__data">
       <h1 className="home__name">
         Uche Obiekwe
-        <img className="home__hand" src="src\assets\hand.svg" alt="hand" />
+        <img className="home__hand" src="public\hand.svg" alt="hand" />
       </h1>
 
       <h3 className="home__job-description">Front-End developer</h3>
