@@ -1,8 +1,9 @@
+import app4r3l from "../../assets/app4r3l.png";
 import favflix from "../../assets/favflix.png";
 import issuetracker from "../../assets/issuetracker.png";
-import app4r3l from "../../assets/app4r3l.png";
-import Work2 from "../../assets/work2.jpg";
-import Work3 from "../../assets/work3.jpg";
+import { TbBrandNextjs } from "react-icons/tb";
+import { SiTailwindcss } from "react-icons/si";
+import { SiStrapi } from "react-icons/si";
 // import Work4 from "../../assets/work4.jpg";
 // import Work5 from "../../assets/work5.jpg";
 
@@ -15,19 +16,11 @@ const css = (
 const firebase = (
   <i className="bx bxl-firebase" style={{ color: "rgb(255,204,47)" }}></i>
 );
-const strapi = (
-  <img style={{ width: "30px" }} src="src\assets\strapi.jpg" alt="strapi" />
-);
+const strapi = <SiStrapi style={{ fontSize: "1.5rem", color: "purple" }} />;
 const tailwind = (
-  <img
-    style={{ width: "30px" }}
-    src="src\assets\tailwind.jpeg"
-    alt="tailwind"
-  />
+  <SiTailwindcss style={{ fontSize: "1.5rem", color: "skyblue" }} />
 );
-const nextJs = (
-  <img style={{ width: "30px" }} src="src\assets\nextjs.svg" alt="nextJs" />
-);
+const nextJs = <TbBrandNextjs style={{ fontSize: "1.5rem", color: "gray" }} />;
 const postgreSQL = <i class="bx bxl-postgresql"></i>;
 
 export const projectsData = [
