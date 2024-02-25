@@ -1,10 +1,15 @@
 /* eslint-disable react/no-unescaped-entities */
+import { IoMdHand } from "react-icons/io";
+
 const Data = () => {
   return (
     <div className="home__data">
       <h1 className="home__name">
         Uche Obiekwe
-        <img className="home__hand" src="./public/hand.svg" alt="hand" />
+        <IoMdHand
+          className="home__hand"
+          style={{ fontSize: "1.75rem", color: "#fabe35" }}
+        />
       </h1>
 
       <h3 className="home__job-description">Front-End developer</h3>
